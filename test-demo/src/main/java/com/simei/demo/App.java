@@ -14,6 +14,6 @@ public class App {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("BeansManage.xml");
         Video video = (Video) applicationContext.getBean("video");
         System.out.println(video.getTitle());
-
+		System.out.println(video.getBeanFactory());
     }
 }
